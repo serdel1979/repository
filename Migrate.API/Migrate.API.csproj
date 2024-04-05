@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Migrate.DTO\Migrate.DTO.csproj" />
     <ProjectReference Include="..\Migrate.Entities\Migrate.Entities.csproj" />
   </ItemGroup>
 

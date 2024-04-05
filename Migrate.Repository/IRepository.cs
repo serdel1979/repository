@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Migrate.Repository
 {
-    internal interface IRepository
+    public interface IRepository
     {
+
     }
 }
