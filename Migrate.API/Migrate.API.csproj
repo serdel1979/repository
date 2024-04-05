@@ -18,6 +18,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Migrate.DTO\Migrate.DTO.csproj" />
     <ProjectReference Include="..\Migrate.Entities\Migrate.Entities.csproj" />
+    <ProjectReference Include="..\Migrate.Repository\Migrate.Repository.csproj" />
+    <ProjectReference Include="..\Utilities\Utilities.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Migrate.Entities;
+using Migrate.Repository;
+using Utilities;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +16,13 @@ builder.Services.AddDbContext<Context>(option =>
 {
     option.UseNpgsql(builder.Configuration.GetConnectionString("Connect"));
 });
+
+builder.Services.AddAutoMapper(typeof(MapperDto));
+
+builder.Services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
+
+
+
 
 var app = builder.Build();
 
