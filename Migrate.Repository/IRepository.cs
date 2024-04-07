@@ -16,6 +16,5 @@ namespace Migrate.Repository
         void Delete(int Id);
         void Update(TEntity data);
         void Save();
-
     }
 }

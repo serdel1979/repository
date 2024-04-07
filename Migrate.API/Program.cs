@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Migrate.Entities;
 using Migrate.Repository;
+using Migrate.Services.Employee;
 using Utilities;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,6 +21,8 @@ builder.Services.AddDbContext<Context>(option =>
 builder.Services.AddAutoMapper(typeof(MapperDto));
 
 builder.Services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
+
+builder.Services.AddTransient<IEmployeeService,EmplyeService>();
 
 
 
